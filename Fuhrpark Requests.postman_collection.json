@@ -1,0 +1,1496 @@
+{
+	"info": {
+		"_postman_id": "e2d0faa1-7a49-4dc5-81b5-ff44bfc01826",
+		"name": "Fuhrpark Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25366186"
+	},
+	"item": [
+		{
+			"name": "Cars",
+			"item": [
+				{
+					"name": "Create Audi",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"carNumber\": \"A-AA253\",\r\n    \"brand\": \"Audi\",\r\n    \"model\": \"A4\",\r\n    \"registrationDate\": \"2020-11-13\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/car",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create BMW",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"carNumber\": \"A-BB885\",\r\n    \"brand\": \"BMW\",\r\n    \"model\": \"330i\",\r\n    \"registrationDate\": \"2021-05-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/car",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Mercedes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"carNumber\": \"A-CC548\",\r\n    \"brand\": \"Mercedes\",\r\n    \"model\": \"E-Klasse\",\r\n    \"registrationDate\": \"2022-06-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/car",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Car by Id 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/car/1",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"car",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Car by Id 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/car/2",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"car",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Car by Id 3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/car/3",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"car",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Car by Id 4",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/car/4",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"car",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Cars",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/car/all",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"car",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Car by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/car/1",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"car",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Car by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"carNumber\": \"A-AA445\",\r\n    \"brand\": \"BMW\",\r\n    \"model\": \"335i\",\r\n    \"registrationDate\": \"2020-11-13\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/car/2",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"car",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Costs",
+			"item": [
+				{
+					"name": "Create Cost (Tanken)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cost\": 70.52,\r\n    \"kilometer\": 507,\r\n    \"date\": \"2022-01-30\",\r\n    \"comment\": \"Tanken\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/car/1/costType/1",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"car",
+								"1",
+								"costType",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Cost1 (Tanken)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cost\": 72.54,\r\n    \"kilometer\": 1002,\r\n    \"date\": \"2022-02-10\",\r\n    \"comment\": \"Tanken\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/car/2/costType/1",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"car",
+								"2",
+								"costType",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Cost2 (Tanken)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cost\": 69.88,\r\n    \"kilometer\": 1512,\r\n    \"date\": \"2022-02-23\",\r\n    \"comment\": \"Tanken\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/car/3/costType/1",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"car",
+								"3",
+								"costType",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Cost3 (Service)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cost\": 158.22,\r\n    \"kilometer\": 2352,\r\n    \"date\": \"2022-03-15\",\r\n    \"comment\": \"Erste Inspection\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/car/1/costType/2",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"car",
+								"1",
+								"costType",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Cost4 (Service)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cost\": 351.44,\r\n    \"kilometer\": 10082,\r\n    \"date\": \"2021-01-12\",\r\n    \"comment\": \"Kundendienst\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/car/2/costType/2",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"car",
+								"2",
+								"costType",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Cost5 (Service)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cost\": 323.98,\r\n    \"kilometer\": 12134,\r\n    \"date\": \"2022-06-17\",\r\n    \"comment\": \"Kundendienst\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/car/3/costType/2",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"car",
+								"3",
+								"costType",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cost by Id 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/1",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cost by Id 2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/2",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Cost",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/all",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cost by Car Id 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/car/1",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"car",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cost by Car Id 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/car/2",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"car",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cost by Car Id and CostType Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/car/2/costType/2",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"car",
+								"2",
+								"costType",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cost by Car Id and CostType Id 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/car/2/costType/1",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"car",
+								"2",
+								"costType",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Cost by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/1",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Cost by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cost\": \"50\",\r\n    \"kilometer\": \"500\",\r\n    \"date\": \"2022-01-30\",\r\n    \"comment\": \"Tanken\",\r\n    \"car\": {\r\n        \"id\": 2,\r\n        \"carNumber\": \"A-DA778\",\r\n        \"brand\": \"BMW\",\r\n        \"model\": \"3\",\r\n        \"registrationDate\": \"2021-04-27\"\r\n    },\r\n    \"costType\": {\r\n        \"id\": 2,\r\n        \"costType\": \"Service\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/cost/2",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"cost",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CostType",
+			"item": [
+				{
+					"name": "Create CostType",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"costType\": \"Reparatur\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/costType/",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"costType",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create CostType1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"costType\": \"Waschstrasse\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/costType/",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"costType",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create CostType2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"costType\": \"Leasing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/costType/",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"costType",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update CostType by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"costType\": \"Leasing kosten\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/costType/1",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"costType",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get CostType by Id 1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/costType/1",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"costType",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get CostType by Id 2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/costType/2",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"costType",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all CostTypes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/costType/all",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"costType",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete CostType by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTY3NTg4MzA1MX0.adcdPX70lzoHS04vQGLDQ8Lsc4zb27TFQE_zFTPYoFBosXDsFbFEw1IMdIqIRPhs8GLFu-gLBzdYoA5BZ2aHaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/costType/1",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"costType",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"user\",\r\n    \"password\": \"veryStrongPassword\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/user/register",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"user1\",\r\n    \"password\": \"veryStrongPassword1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/user/register",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"user2\",\r\n    \"password\": \"veryStrongPassword2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/user/register",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authenticate User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"user\",\r\n    \"password\": \"veryStrongPassword\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/login",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authenticate User1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"user1\",\r\n    \"password\": \"veryStrongPassword1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/login",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authenticate User2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"user2\",\r\n    \"password\": \"veryStrongPassword2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuhrpark-production.up.railway.app/login",
+							"protocol": "https",
+							"host": [
+								"fuhrpark-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
